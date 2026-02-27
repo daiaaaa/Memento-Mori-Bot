@@ -25,12 +25,14 @@ def progress_bar(percentage):
     return "█" * filled_blocks + "░" * empty_blocks
 
 
-def generate_markdown():
+def generate_readme():
     today = datetime.now().strftime("%d/%m/%Y")
     days_lived, days_remaining, percentage = calculate_life_progress()
     bar = progress_bar(percentage)
 
-    content = f"""# 🕯 Memento Mori — {today}
+    content = f"""# 🕯 Memento Mori
+
+## {today}
 
 Nascimento: 07/07/1997  
 Expectativa: 100 anos  
@@ -40,15 +42,22 @@ Dias vividos: {days_lived}
 Dias restantes: {days_remaining}  
 Vida completada: {percentage:.2f}%
 
-Progresso:
 {bar} {percentage:.0f}%
 
-"Construa algo hoje que sobreviva ao tempo."
+---
+
+> "Construa algo hoje que sobreviva ao tempo."
+
+---
+
+### 🤖 Sobre este projeto
+
+Este repositório atualiza automaticamente todos os dias via GitHub Actions.
 """
 
-    with open("life_progress.md", "w", encoding="utf-8") as f:
+    with open("README.md", "w", encoding="utf-8") as f:
         f.write(content)
 
 
 if __name__ == "__main__":
-    generate_markdown()
+    generate_readme()
