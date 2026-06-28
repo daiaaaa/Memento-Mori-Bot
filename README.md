@@ -1,13 +1,13 @@
 # 🕯 Memento Mori
 
-## 27/06/2026
+## 28/06/2026
 
 Nascimento: 07/07/1997  
 Expectativa: 100 anos  
 
 Idade: 28 anos  
-Dias vividos: 10582  
-Dias restantes: 25943  
+Dias vividos: 10583  
+Dias restantes: 25942  
 Vida completada: 28.97%
 
 ████████░░░░░░░░░░░░░░░░░░░░░░ 29%
